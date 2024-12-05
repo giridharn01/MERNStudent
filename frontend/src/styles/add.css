@@ -1,0 +1,83 @@
+.add-student-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f0eeee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-floating input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+    color: #292727; /* Text color for visibility */
+}
+
+.form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.form-floating input:focus {
+    border-color: #0d6efd;
+    outline: none;
+}
+
+.form-floating input:not(:placeholder-shown) + label{
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #f4f5f6;
+    background: #848383;
+    padding: 0 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .add-student-container {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
